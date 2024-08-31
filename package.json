@@ -1,0 +1,15 @@
+{
+  "name": "video-streaming-application",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm start --prefix backend",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
